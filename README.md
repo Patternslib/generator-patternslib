@@ -1,2 +1,3 @@
 # generator-patternslib
-A Yeoman generator for a Patternslib pattern
+
+A [Yeoman](http://yeoman.io) generator for a [Patternslib](http://patternslib.com) pattern.

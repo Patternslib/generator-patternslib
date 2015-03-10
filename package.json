@@ -11,14 +11,16 @@
     "url": "https://github.com/Patternslib/generator-patternslib.git"
   },
   "keywords": [
-    "yeoman",
-    "patternslib",
-    "generator"
+    "yeoman-generator",
+    "patternslib"
   ],
   "author": "JC Brand",
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/Patternslib/generator-patternslib/issues"
   },
-  "homepage": "https://github.com/Patternslib/generator-patternslib"
+  "homepage": "https://github.com/Patternslib/generator-patternslib",
+  "dependencies": {
+    "yeoman-generator": "^0.18.10"
+  }
 }
