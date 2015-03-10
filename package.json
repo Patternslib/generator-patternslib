@@ -1,0 +1,24 @@
+{
+  "name": "generator-patternslib",
+  "version": "0.0.1",
+  "description": "A Yeoman generator for a Patternslib pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Patternslib/generator-patternslib.git"
+  },
+  "keywords": [
+    "yeoman",
+    "patternslib",
+    "generator"
+  ],
+  "author": "JC Brand",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/Patternslib/generator-patternslib/issues"
+  },
+  "homepage": "https://github.com/Patternslib/generator-patternslib"
+}
