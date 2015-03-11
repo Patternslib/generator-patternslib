@@ -13,26 +13,19 @@ var PatternGenerator = yeoman.generators.Base.extend({
       defaults: './',
       banner: 'some banner'
     });
-
-    this.option('requirejs', {
-      desc: 'Support requirejs',
-      defaults: true 
-    });
-
     this.argument('app_name', { type: String, required: false });
     this.appname = this.app_name || this.appname;
     this.env.options.appPath = this.options.appPath || './';
     this.config.set('appPath', this.env.options.appPath);
-
-    this.config.defaults({
-      appName: this.appname,
-      ui: this.options.ui,
-      includeRequireJS: true
-    });
     this.indexFile = this.readFileAsString(path.join(this.sourceRoot(), 'index.html'));
   },
 
   writing: {
+    setupEnv: function () {
+      this.mkdir(this.env.options.appPath);
+      this.mkdir(this.env.options.appPath + '/src');
+      this.write(this.env.options.appPath + '/index.html', this.indexFile);
+    },
 
     git: function () {
       this.template('gitignore', '.gitignore');
@@ -51,6 +44,10 @@ var PatternGenerator = yeoman.generators.Base.extend({
       this.copy('editorconfig', '.editorconfig');
     },
 
+    copyMakeFile: function () {
+      this.copy('Makefile', 'Makefile');
+    },
+
     packageJSON: function () {
       this.template('_package.json', 'package.json');
     },
@@ -60,23 +57,9 @@ var PatternGenerator = yeoman.generators.Base.extend({
       this.indexFile = this.engine(this.indexFile, this);
     },
 
-    setupEnv: function () {
-      this.mkdir(this.env.options.appPath);
-      this.mkdir(this.env.options.appPath + '/src');
-      this.write(this.env.options.appPath + '/index.html', this.indexFile);
-    },
-
     createPatternFile: function () {
-      this.template("pattern.js", './src/pattern.js');
+      this.template("pattern.js", this.env.options.appPath + '/src/pattern.js');
     }
-
-  },
-
-  _writeTemplate: function (source, destination, data) {
-    if (typeof source === 'undefined' || typeof destination === 'undefined') {
-      return;
-    }
-    this.template(source + ".js", destination + ext, data);
   }
 });
 
