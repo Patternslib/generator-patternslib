@@ -7,7 +7,7 @@ A [Yeoman](http://yeoman.io) generator for a [Patternslib](http://patternslib.co
 Run the following:
 
 ```
-    yo patternslib mypattern
+    yo patternslib pat-example 
 ```
 
 where ``mypattern`` is the name of the pattern you want to create.
