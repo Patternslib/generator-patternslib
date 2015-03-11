@@ -1,0 +1,15 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.1",
+  "keywords": [
+    "patternslib",
+    "pattern"
+  ],
+  "dependencies": {},
+  "license": "BSD",
+  "devDependencies": {
+    "bower": "latest",
+    "requirejs": "",
+    "http-server": "^0.7.3"
+  }
+}
