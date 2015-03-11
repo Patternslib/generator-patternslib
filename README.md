@@ -10,4 +10,4 @@ Run the following:
     yo patternslib pat-example 
 ```
 
-where ``mypattern`` is the name of the pattern you want to create.
+where ``pat-example`` is the name of the pattern you want to create.
