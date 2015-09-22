@@ -6,20 +6,29 @@
             "jquery",
             "pat-base",
             "pat-registry",
-            "pat-parser"
+            "pat-parser",
+            "pat-logger"
         ], function() {
             return factory.apply(this, arguments);
         });
     } else {
         // If require.js is not available, you'll need to make sure that these
         // global variables are available.
-        factory($, Base, patterns, patterns.Parser);
+        factory($, patterns.Base, patterns, patterns.Parser, patterns.logger);
     }
-}(this, function($, Base, registry, Parser) {
+}(this, function($, Base, registry, Parser, logger) {
     'use strict';
+
+    var log = logger.getLogger("pat-clone");
+    /* For logging, you can call log.debug, log.info, log.warn, log.error and log.fatal.
+     *
+     * For more information on how to use the logger and how to view log messages, please read:
+     * https://github.com/Patternslib/logging
+     */
+
     var parser = new Parser('<%= appname.split("-")[1] %>');
     /* If you'd like your pattern to be configurable via the
-     * data-<%= appname.split("-")[1] %> attribute, then you need to
+     * data-<%= appname %> attribute, then you need to
      * specify the available arguments here, by calling parser.addArgument.
      *
      * The addArgument method takes the following parameters:
@@ -37,7 +46,13 @@
      */
 
     return Base.extend({
+        /* The name is used to store the pattern in a registry and needs to be
+         * unique.
+         */
         name: '<%= appname.split("-")[1] %>',
+        /* The trigger specifies the selector (CSS or jQuery) which Patternslib
+         * will scan for in order to identifiy and initialize this pattern.
+         */
         trigger: ".<%= appname %>",
 
         init: function init<%= _.classify(this.appname) %> () {
