@@ -1,6 +1,4 @@
 node_modules
 src/bower_components
-stamp-bower
-stamp-npm
 *~
 .*.sw?
