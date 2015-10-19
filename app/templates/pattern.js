@@ -19,12 +19,13 @@
 }(this, function($, Base, registry, Parser, logger) {
     'use strict';
 
-    var log = logger.getLogger("pat-clone");
+    var log = logger.getLogger("<%= appname %>");
     /* For logging, you can call log.debug, log.info, log.warn, log.error and log.fatal.
      *
      * For more information on how to use the logger and how to view log messages, please read:
      * https://github.com/Patternslib/logging
      */
+    log.debug("pattern loaded");
 
     var parser = new Parser('<%= appname.split("-")[1] %>');
     /* If you'd like your pattern to be configurable via the
@@ -63,6 +64,9 @@
              * If the user provided any values via the data-<%= appname %>
              * attribute, those values will already be set.
              */
+            // Just for the demo, do something:
+            this.$el.html("<%= appname %> is working!");
+            log.debug("pattern initialized");
         }
     });
 }));
