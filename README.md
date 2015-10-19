@@ -11,7 +11,6 @@ Javascript.
 Run the following:
 
 ```
-    mkdir pat-example && cd pat-example
     yo patternslib pat-example 
 ```
 
