@@ -50,6 +50,8 @@ var PatternGenerator = yeoman.generators.Base.extend({
                 '/.jshintrc');
             this.copy('Makefile', this.env.options.appPath +
                 '/Makefile');
+            this.copy('README.md', this.env.options.appPath +
+                '/README.md');
         },
 
         setupIndex: function() {
