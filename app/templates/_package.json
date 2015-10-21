@@ -6,7 +6,7 @@
     "pattern"
   ],
   "dependencies": {},
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "devDependencies": {
     "bower": "latest",
     "requirejs": "",
