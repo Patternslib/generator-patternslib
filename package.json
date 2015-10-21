@@ -1,6 +1,6 @@
 {
   "name": "generator-patternslib",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A Yeoman generator for creating a Patternslib pattern",
   "main": "index.js",
   "scripts": {
