@@ -1,30 +1,30 @@
 {
-  "name": "generator-patternslib",
-  "version": "0.2.0",
-  "description": "A Yeoman generator for creating a Patternslib pattern",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Patternslib/generator-patternslib.git"
-  },
-  "keywords": [
-    "yeoman-generator",
-    "patternslib"
-  ],
-  "files": [
-    "app"
-  ],
-  "author": "JC Brand",
-  "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/Patternslib/generator-patternslib/issues"
-  },
-  "homepage": "https://github.com/Patternslib/generator-patternslib",
-  "dependencies": {
-    "yeoman-generator": "^0.18.10",
-    "yo": "^1.4.6"
-  }
+    "name": "generator-patternslib",
+    "version": "0.3.0",
+    "description": "A Yeoman generator for creating a Patternslib pattern",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Patternslib/generator-patternslib.git"
+    },
+    "keywords": [
+        "yeoman-generator",
+        "patternslib"
+    ],
+    "files": [
+        "app"
+    ],
+    "author": "JC Brand",
+    "license": "BSD",
+    "bugs": {
+        "url": "https://github.com/Patternslib/generator-patternslib/issues"
+    },
+    "homepage": "https://github.com/Patternslib/generator-patternslib",
+    "dependencies": {
+        "yeoman-generator": "^0.18.10",
+        "yo": "^1.4.6"
+    }
 }
