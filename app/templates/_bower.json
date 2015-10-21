@@ -5,6 +5,9 @@
   "dependencies": {
     "patternslib": "master"
   },
+  "resolutions": {
+    "jquery": "1.11.1"
+  },
   "keywords": [
     "patternslib",
     "pattern"
