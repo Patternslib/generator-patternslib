@@ -1,20 +1,20 @@
 {
-  "name": "<%= _.slugify(appname) %>",
-  "version": "0.0.1",
-  "devDependencies": {},
-  "dependencies": {
-    "patternslib": "master"
-  },
-  "resolutions": {
-    "jquery": "1.11.1"
-  },
-  "keywords": [
-    "patternslib",
-    "pattern"
-  ],
-  "license": "BSD",
-  "ignore": [
-    "node_modules",
-    "bower_components"
-  ]
+    "name": "<%= _.slugify(appname) %>",
+    "version": "0.0.1",
+    "devDependencies": {},
+    "dependencies": {
+        "patternslib": "master"
+    },
+    "resolutions": {
+        "jquery": "1.11.1"
+    },
+    "keywords": [
+        "patternslib",
+        "pattern"
+    ],
+    "license": "BSD",
+    "ignore": [
+        "node_modules",
+        "bower_components"
+    ]
 }
