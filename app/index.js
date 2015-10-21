@@ -59,6 +59,11 @@ var PatternGenerator = yeoman.generators.Base.extend({
             this.write(this.env.options.appPath + '/index.html', this.indexFile);
         },
 
+        setupDocs: function() {
+            this.template("README.md", this.env.options.appPath +
+                '/README.md');
+        },
+
         setupApp: function() {
             this.template("main.js", this.env.options.appPath +
                 '/main.js');
