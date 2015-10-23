@@ -39,7 +39,7 @@
      *      doesn't provide one.
      *  - choices: An optional set (Array) of values that the property might take.
      *      If specified, values outside of this set will not be accepted.
-     *  - multiple: An optional boolean value which specifies wether the
+     *  - multiple: An optional boolean value which specifies whether the
      *      property can be multivalued or not.
      *
      *  For example:
@@ -53,7 +53,7 @@
          */
         name: '<%= appname.split("-")[1] %>',
         /* The trigger specifies the selector (CSS or jQuery) which Patternslib
-         * will scan for in order to identifiy and initialize this pattern.
+         * will scan for in order to identify and initialize this pattern.
          */
         trigger: ".<%= appname %>",
 
