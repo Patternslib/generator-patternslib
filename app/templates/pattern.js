@@ -1,7 +1,7 @@
 (function (root, factory) {
     // We use AMD (Asynchronous Module Definition) or browser globals to create
     // this module.
-    if (typeof define === 'function' && define.amd) {
+    if (typeof define === "function" && define.amd) {
         define([
             "jquery",
             "pat-base",
@@ -17,7 +17,7 @@
         factory($, patterns.Base, patterns, patterns.Parser, patterns.logger);
     }
 }(this, function($, Base, registry, Parser, logger) {
-    'use strict';
+    "use strict";
 
     var log = logger.getLogger("<%= appname %>");
     /* For logging, you can call log.debug, log.info, log.warn, log.error and log.fatal.
@@ -27,7 +27,7 @@
      */
     log.debug("pattern loaded");
 
-    var parser = new Parser('<%= appname.split("-")[1] %>');
+    var parser = new Parser("<%= appname.split("-")[1] %>");
     /* If you'd like your pattern to be configurable via the
      * data-<%= appname %> attribute, then you need to
      * specify the available arguments here, by calling parser.addArgument.
@@ -51,7 +51,7 @@
         /* The name is used to store the pattern in a registry and needs to be
          * unique.
          */
-        name: '<%= appname.split("-")[1] %>',
+        name: "<%= appname.split('-')[1] %>",
         /* The trigger specifies the selector (CSS or jQuery) which Patternslib
          * will scan for in order to identify and initialize this pattern.
          */
