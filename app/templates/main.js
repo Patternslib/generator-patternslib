@@ -22,7 +22,7 @@ require.config({
     }
 });
 
-require(["pat-registry", "<%= appname %>"], function(registry, pattern) {
+require(["jquery", "pat-registry", "<%= appname %>"], function($, registry, pattern) {
     // your pattern is found via it's name in the filesystem, starting from the
     // requireJS baseUrl option: "<%= appname %>"
     window.patterns = registry;
