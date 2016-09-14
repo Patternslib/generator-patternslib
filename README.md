@@ -13,7 +13,27 @@ More info at http://patternslib.com
 Run the following:
 
 ```
-    yo patternslib pat-example 
+    $ yo patternslib pat-example
 ```
 
 where ``pat-example`` is the name of the pattern you'd like to create.
+
+## Developing
+
+To develop generator-patternslib and use the generator directly from the sources, do the following:
+
+- Install ``yo`` globally.
+- Check out this repository.
+- Within the checked out repository, issue the following commands:
+
+```
+    $ npm install
+    $ npm link
+```
+The command ``npm link`` links this repository into your users or global node_modules directory.
+
+Now you're ready to create an example scaffolding:
+
+```
+    $ yo patternslib pat-test
+```
