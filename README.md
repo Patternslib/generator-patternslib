@@ -1,3 +1,6 @@
+> :warning: generator-patternslib doesn't support Patternslib v4.
+> For generating a pattern scaffold, use [pat-PATTERN_TEMPLATE](https://github.com/Patternslib/pat-PATTERN_TEMPLATE) instead.
+
 # generator-patternslib
 
 A [Yeoman](http://yeoman.io) generator for creating a [Patternslib](http://patternslib.com) pattern.
